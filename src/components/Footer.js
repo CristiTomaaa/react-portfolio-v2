@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import facebook from "../img/fb-icon.png";
-import linkedin from "../img/linkedin-icon.png";
-import github from "../img/git-icon.png";
-import stackoverflow from "../img/stack-icon.png";
+import facebook from "../img/facebook-f-brands.svg";
+import linkedin from "../img/linkedin-in-brands.svg";
+import github from "../img/github-brands.svg";
+import stackoverflow from "../img/stack-overflow-brands.svg";
 
 const Footer = () => {
   return (
@@ -11,17 +11,18 @@ const Footer = () => {
         <code>{`<CristiDev />`}</code>
       </div>
       <StyledSocials>
+        <p>You can find me on:</p>
         <a href="#">
-          <img src={facebook}></img>
+          <img className="social-icon" src={facebook}></img>
         </a>
         <a href="#">
-          <img src={linkedin}></img>
+          <img className="social-icon" src={linkedin}></img>
         </a>
         <a href="#">
-          <img src={github}></img>
+          <img className="social-icon" src={github}></img>
         </a>
         <a href="#">
-          <img src={stackoverflow}></img>
+          <img className="social-icon" src={stackoverflow}></img>
         </a>
       </StyledSocials>
     </StyledFooter>
@@ -55,8 +56,17 @@ const StyledFooter = styled.div`
 `;
 
 const StyledSocials = styled.div`
-  a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  .social-icon {
     margin-left: 2rem;
+    filter: invert(88%) sepia(100%) saturate(2%) hue-rotate(52deg)
+      brightness(110%) contrast(101%);
+    width: 35px;
+    height: 35px;
   }
 `;
 
