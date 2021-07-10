@@ -3,6 +3,7 @@ import home1 from "../img/aboutimg.png";
 
 import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 import styled from "styled-components";
+import { fade, scrollReveal } from "../animations";
 
 const ServicesSection = () => {
   return (

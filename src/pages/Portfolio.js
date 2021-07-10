@@ -2,21 +2,48 @@ import addflight from "../img/addflight.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { pageAnimations } from "../animations";
+import {
+  pageAnimations,
+  fade,
+  photoAnimation,
+  lineAnimation,
+} from "../animations";
+import { useScroll } from "../components/useScroll";
 
 const Portfolio = () => {
+  const [element, controls] = useScroll();
+  const [element1, controls1] = useScroll();
   return (
     <StyledWork
       variants={pageAnimations}
-      exit="exit"
       initial="hidden"
       animate="show"
+      exit="exit"
     >
       <StyledProject>
-        <h2>AddFlight.com</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>AddFlight.com</motion.h2>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/portfolio/addflight">
-          <img src={addflight} alt="project image" />
+          <StyledHide>
+            <motion.img
+              variants={photoAnimation}
+              src={addflight}
+              alt="project image"
+            />
+          </StyledHide>
+        </Link>
+      </StyledProject>
+      <StyledProject>
+        <motion.h2 variants={fade}>AddFlight.com</motion.h2>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
+        <Link to="/portfolio/addflight">
+          <StyledHide>
+            <motion.img
+              variants={photoAnimation}
+              src={addflight}
+              alt="project image"
+            />
+          </StyledHide>
         </Link>
       </StyledProject>
     </StyledWork>
@@ -45,6 +72,10 @@ const StyledProject = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+`;
+
+const StyledHide = styled.div`
+  overflow: hidden;
 `;
 
 export default Portfolio;

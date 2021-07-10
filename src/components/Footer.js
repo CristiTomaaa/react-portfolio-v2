@@ -3,10 +3,11 @@ import facebook from "../img/facebook-f-brands.svg";
 import linkedin from "../img/linkedin-in-brands.svg";
 import github from "../img/github-brands.svg";
 import stackoverflow from "../img/stack-overflow-brands.svg";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter layout>
       <div className="logo">
         <code>{`<CristiDev />`}</code>
       </div>
@@ -32,7 +33,7 @@ const Footer = () => {
 const StyledFooter = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 2rem 10rem;
+  padding: 0rem 10rem;
   align-items: center;
   background-color: #f54f33;
   box-shadow: 0 -10px 6px -6px #c2c2c2;

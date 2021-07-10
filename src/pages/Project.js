@@ -77,6 +77,9 @@ const StyledDescription = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  h3 {
+    color: black;
+  }
 `;
 
 const StyledContent = styled.div`

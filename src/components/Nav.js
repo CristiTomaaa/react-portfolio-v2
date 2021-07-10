@@ -3,26 +3,32 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <StyledNav>
-      <h1>
-        <Link id="logo" to="/">
-          <code>{`<CristiDev />`}</code>
-        </Link>
-      </h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/portfolio">Porfolio</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </StyledNav>
+    <StickyNav>
+      <StyledNav>
+        <h1>
+          <Link id="logo" to="/">
+            <code>{`<CristiDev />`}</code>
+          </Link>
+        </h1>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </StyledNav>
+    </StickyNav>
   );
 };
+
+const StickyNav = styled.div`
+  position: sticky;
+`;
 
 const StyledNav = styled.nav`
   min-height: 10vh;
