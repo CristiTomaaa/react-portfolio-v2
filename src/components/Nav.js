@@ -1,34 +1,46 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const { pathname } = useLocation();
   return (
-    <StickyNav>
-      <StyledNav>
-        <h1>
-          <Link id="logo" to="/">
-            <code>{`<CristiDev />`}</code>
-          </Link>
-        </h1>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </StyledNav>
-    </StickyNav>
+    <StyledNav>
+      <h1>
+        <Link id="logo" to="/">
+          <code>{`<CristiDev />`}</code>
+        </Link>
+      </h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/" ? "50%" : "0%" }}
+          />
+        </li>
+        <li>
+          <Link to="/portfolio">Portfolio</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/portfolio" ? "50%" : "0%" }}
+          />
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+          />
+        </li>
+      </ul>
+    </StyledNav>
   );
 };
-
-const StickyNav = styled.div`
-  position: sticky;
-`;
 
 const StyledNav = styled.nav`
   min-height: 10vh;
@@ -39,9 +51,11 @@ const StyledNav = styled.nav`
   padding: 1rem 10rem;
   background-color: #ffffff;
   box-shadow: 0 10px 6px -6px #cfcfcf;
-  position: relative;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
 
-  &:before,
+  /* &:before,
   &:after {
     z-index: -1;
     position: absolute;
@@ -59,7 +73,7 @@ const StyledNav = styled.nav`
     transform: rotate(3deg);
     right: 10px;
     left: auto;
-  }
+  } */
   a {
     text-decoration: none;
     color: #f54f33;
@@ -76,6 +90,34 @@ const StyledNav = styled.nav`
   li {
     padding-left: 6rem;
     position: relative;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    #logo {
+      display: inline-block;
+      margin: 2rem;
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+    }
+    li {
+      padding: 0;
+    }
+  }
+`;
+
+const Line = styled(motion.div)`
+  height: 0.2rem;
+  background: #f54f33;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 60%;
+  @media (max-width: 1300px) {
+    left: 0%;
   }
 `;
 

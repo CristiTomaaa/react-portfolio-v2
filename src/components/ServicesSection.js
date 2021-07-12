@@ -58,18 +58,30 @@ const StyledServices = styled(StyledAbout)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  @media (max-width: 1300px) {
+  }
 `;
 
 const StyledCards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
 `;
 
 const StyledCard = styled.div`
   flex-basis: 20rem;
+  @media (max-width: 1300px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .icon {
     display: flex;
     align-items: center;
+    justify-content: center;
     h3 {
       margin-left: 1rem;
       padding: 1rem;

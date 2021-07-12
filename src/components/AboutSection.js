@@ -10,7 +10,7 @@ const AboutSection = () => {
       <StyledDescription>
         <motion.div className="title">
           <StyledHide>
-            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
+            <motion.h2 variants={titleAnimation}>I work to make</motion.h2>
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={titleAnimation}>
@@ -22,7 +22,11 @@ const AboutSection = () => {
           </StyledHide>
         </motion.div>
         <motion.p variants={fade}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ab!
+          An effective and immersive user experience is what captures{" "}
+          <span>attention </span>
+          and spreads a clear message. This is why I attach extremely importance
+          to that ergonomics serve the design, and that this design is
+          innovative and neat.
         </motion.p>
         <motion.button variants={fade}>Contact</motion.button>
       </StyledDescription>

@@ -12,7 +12,11 @@ const Footer = () => {
         <code>{`<CristiDev />`}</code>
       </div>
       <StyledSocials>
-        <p>You can find me on:</p>
+        <p>
+          If you have any questions about my services, or just want to say
+          hello, feel free to contact me. Below are my social pages and my
+          email:
+        </p>
         <a href="#">
           <img className="social-icon" src={facebook}></img>
         </a>
@@ -37,6 +41,11 @@ const StyledFooter = styled.div`
   align-items: center;
   background-color: #f54f33;
   box-shadow: 0 -10px 6px -6px #c2c2c2;
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   ul {
     display: flex;
     list-style: none;
@@ -50,6 +59,10 @@ const StyledFooter = styled.div`
     color: white;
     font-size: 1.6rem;
     font-weight: lighter;
+    @media (max-width: 1300px) {
+      margin-top: 2rem;
+      display: inline-block;
+    }
   }
   p {
     color: white;
@@ -68,6 +81,13 @@ const StyledSocials = styled.div`
       brightness(110%) contrast(101%);
     width: 35px;
     height: 35px;
+  }
+  @media (max-width: 1300px) {
+    display: block;
+    margin-bottom: 3rem;
+    .social-icon {
+      margin: 0rem 1rem;
+    }
   }
 `;
 
