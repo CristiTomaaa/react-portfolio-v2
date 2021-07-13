@@ -3,30 +3,33 @@ import styled from "styled-components";
 import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 import { motion } from "framer-motion";
 import { titleAnimation, fade } from "../animations";
+import ParticleBackground from "./ParticleBackground";
 
 const AboutSection = () => {
   return (
     <StyledAbout>
+      <ParticleBackground />
       <StyledDescription>
         <motion.div className="title">
           <StyledHide>
-            <motion.h2 variants={titleAnimation}>I work to make</motion.h2>
+            <motion.h2 variants={titleAnimation}>Do you know </motion.h2>
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={titleAnimation}>
-              your <span>dreams</span> come
+              how many <span>ATOMS</span>
             </motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2 variants={titleAnimation}>true !</motion.h2>
+            <motion.h2 variants={titleAnimation}>
+              are in the universe ?
+            </motion.h2>
           </StyledHide>
         </motion.div>
         <motion.p variants={fade}>
-          An effective and immersive user experience is what captures{" "}
-          <span>attention </span>
-          and spreads a clear message. This is why I attach extremely importance
-          to that ergonomics serve the design, and that this design is
-          innovative and neat.
+          An estimated five trillion hydrogen atoms can fit on the head of a
+          pin. Make sure your website isn't just another atom in the world wide
+          web !<br /> I am a <span>Front-End Web Developer</span> passionate
+          about creating interactive applications and experiences.
         </motion.p>
         <motion.button variants={fade}>Contact</motion.button>
       </StyledDescription>

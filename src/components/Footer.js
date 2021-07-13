@@ -12,21 +12,17 @@ const Footer = () => {
         <code>{`<CristiDev />`}</code>
       </div>
       <StyledSocials>
-        <p>
-          If you have any questions about my services, or just want to say
-          hello, feel free to contact me. Below are my social pages and my
-          email:
-        </p>
-        <a href="#">
+        <p>Look mom, I am famous !</p>
+        <a href="https://www.facebook.com/cristi.toma/">
           <img className="social-icon" src={facebook}></img>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/cristi-toma-b5791217a/">
           <img className="social-icon" src={linkedin}></img>
         </a>
-        <a href="#">
+        <a href="https://github.com/CristiTomaaa">
           <img className="social-icon" src={github}></img>
         </a>
-        <a href="#">
+        <a href="https://stackoverflow.com/users/14477897/cristit">
           <img className="social-icon" src={stackoverflow}></img>
         </a>
       </StyledSocials>
@@ -36,7 +32,7 @@ const Footer = () => {
 
 const StyledFooter = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0rem 10rem;
   align-items: center;
   background-color: #f54f33;

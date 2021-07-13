@@ -12,7 +12,9 @@ const Contact = () => {
     >
       <StyledTitle>
         <StyledHide>
-          <motion.h2 variants={titleAnimation}>Get in touch</motion.h2>
+          <motion.h2 variants={titleAnimation}>
+            Ready to make something special? Me too!
+          </motion.h2>
         </StyledHide>
       </StyledTitle>
     </StyledContact>

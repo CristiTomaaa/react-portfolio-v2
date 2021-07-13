@@ -1,5 +1,8 @@
-import teamwork from "../img/money.svg";
-import home1 from "../img/aboutimg.png";
+import servicesimg from "../img/servicesimg.png";
+import webdesign from "../img/web-design.svg";
+import webdevelopment from "../img/data.svg";
+import ecommerce from "../img/online-shopping.svg";
+import cms from "../img/cms.svg";
 
 import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 import styled from "styled-components";
@@ -8,49 +11,67 @@ import { fade, scrollReveal } from "../animations";
 const ServicesSection = () => {
   return (
     <StyledServices>
-      <StyledImage>
-        <img src={home1} alt="running code" />
-      </StyledImage>
       <StyledDescription>
         <h2>
-          High <span>quality</span> services
+          High <span>quality</span> services.
         </h2>
         <StyledCards>
           <StyledCard>
             <div className="icon">
-              <img src={teamwork} alt="teamwork " />
-              <h3>Efficient</h3>
+              <img src={webdesign} alt="teamwork " />
+              <h3>Web Design</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Web design is vital when developing a digital product since it
+              ensures usability, good user experience, and great aesthetics.
+            </p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img src={teamwork} alt="teamwork " />
-              <h3>Efficient</h3>
+              <img src={webdevelopment} alt="teamwork " />
+              <h3>Web Development</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Web development is the work involved in developing a Web site for
+              the Internet following the latest trends in web development.
+            </p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img src={teamwork} alt="teamwork " />
-              <h3>Efficient</h3>
+              <img src={ecommerce} alt="teamwork " />
+              <h3>Ecommerce</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              I can produce Ecommerce solutions that drive sales and generate
+              leads. My websites are designed to maximise conversion rate on
+              desktop or mobile devices.
+            </p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img src={teamwork} alt="teamwork " />
-              <h3>Efficient</h3>
+              <img src={cms} alt="teamwork " />
+              <h3>CMS</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              We can provide you with a Content Management System (CMS) so that
+              once the development process is finished you can add or make small
+              adjustments via a user friendly control panel.
+            </p>
           </StyledCard>
         </StyledCards>
       </StyledDescription>
+      <StyledServicesImage>
+        <img src={servicesimg} alt="running code" />
+      </StyledServicesImage>
     </StyledServices>
   );
 };
 
 const StyledServices = styled(StyledAbout)`
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   h2 {
     padding-bottom: 5rem;
   }
@@ -62,26 +83,47 @@ const StyledServices = styled(StyledAbout)`
   }
 `;
 
+const StyledServicesImage = styled.div`
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 30rem;
+    object-fit: contain;
+    display: flex;
+  }
+`;
+
 const StyledCards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   @media (max-width: 1300px) {
     justify-content: center;
   }
 `;
 
 const StyledCard = styled.div`
-  flex-basis: 20rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 24rem;
   @media (max-width: 1300px) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  p {
+    font-size: 1.1rem;
+  }
   .icon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    img {
+      width: 60px;
+      height: 60px;
+    }
     h3 {
       margin-left: 1rem;
       padding: 1rem;

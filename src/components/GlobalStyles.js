@@ -25,6 +25,7 @@ button {
   padding: 1rem 4rem;
   border: 2px solid #F54F33;
   background: transparent;
+  background-color: #FFFFFF; 
   color: #F54F33;
   transition: all 0.3s ease;
   border-radius: 4rem;

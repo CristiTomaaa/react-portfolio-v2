@@ -76,7 +76,8 @@ const StyledNav = styled.nav`
   } */
   a {
     text-decoration: none;
-    color: #f54f33;
+    color: black;
+    /* color: #f54f33; */
     font-weight: bold;
   }
   ul {
@@ -86,6 +87,7 @@ const StyledNav = styled.nav`
   #logo {
     font-size: 1.6rem;
     font-weight: bold;
+    color: #f54f33;
   }
   li {
     padding-left: 6rem;
