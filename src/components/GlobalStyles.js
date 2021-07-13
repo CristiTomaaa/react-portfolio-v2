@@ -31,6 +31,8 @@ button {
   border-radius: 4rem;
   font-family: 'Inter', sans-serif;
   &:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
     background-color: #F54F33;
     color: white;
   }
@@ -58,6 +60,7 @@ p {
   color: #949494;
   font-size: 1.4rem;
   line-height: 150%;
+  
 }
 
 `;

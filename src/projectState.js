@@ -1,5 +1,5 @@
 //Import Images
-import addflight from "./img/addflight.png";
+import addflight from "./img/addflight010.png";
 import addflightfull from "./img/addflightfull.png";
 
 export const projectState = () => {

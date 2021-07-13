@@ -1,4 +1,4 @@
-import addflight from "../img/addflight.png";
+import addflight from "../img/addflight010.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -55,6 +55,7 @@ const StyledWork = styled(motion.div)`
   overflow: hidden;
   padding: 5rem 10rem;
   h2 {
+    text-align: center;
     padding: 1rem 0rem;
   }
   @media (max-width: 1300px) {
@@ -70,25 +71,30 @@ const StyledProject = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.3rem;
-    border-radius: 50rem;
+    border-radius: 50%;
     background: #f54f33;
     margin-bottom: 3rem;
   }
   img {
     width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    height: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(0px 15px 25px #858585);
+    /* object-fit: fill; */
+    /* overflow: show; */
   }
   @media (max-width: 1300px) {
     img {
       max-width: 100%;
       height: auto;
+      filter: drop-shadow(0px 0px 0px #ffffff);
     }
   }
 `;
 
 const StyledHide = styled.div`
   overflow: hidden;
+  width: 100%;
 `;
 
 export default Portfolio;

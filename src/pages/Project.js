@@ -66,8 +66,12 @@ const StyledHeadline = styled.div`
   }
   img {
     width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    height: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(0px 15px 25px #858585);
+  }
+  @media (max-width: 1300px) {
+    min-height: 60vh;
   }
 `;
 
