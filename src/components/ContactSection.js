@@ -91,7 +91,7 @@ const StyledForm = styled.div`
   }
   input:focus,
   textarea:focus {
-    border: 1px solid #f19f90;
+    border: 1px solid #fd846f;
   }
   textarea {
     min-height: 250px;
@@ -119,6 +119,9 @@ const StyledForm = styled.div`
       background-color: #f54f33;
       color: white;
     }
+  }
+  @media (max-width: 1300px) {
+    max-width: 40vh;
   }
 `;
 
