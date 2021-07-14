@@ -14,27 +14,27 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">HOME</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/" ? "100%" : "0%" }}
           />
         </li>
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/portfolio">PORTFOLIO</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/portfolio" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/portfolio" ? "100%" : "0%" }}
           />
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">CONTACT</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/contact" ? "100%" : "0%" }}
           />
         </li>
       </ul>
@@ -90,7 +90,7 @@ const StyledNav = styled.nav`
     color: #f54f33;
   }
   li {
-    padding-left: 6rem;
+    margin: 0rem 2rem;
     position: relative;
   }
   @media (max-width: 1300px) {
@@ -116,8 +116,8 @@ const Line = styled(motion.div)`
   background: #f54f33;
   width: 0%;
   position: absolute;
-  bottom: -80%;
-  left: 60%;
+  bottom: -30%;
+  left: 0%;
   @media (max-width: 1300px) {
     left: 0%;
   }

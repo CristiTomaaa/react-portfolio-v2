@@ -63,7 +63,7 @@ const ContactSection = () => {
           type="submit"
           style={{ background: loader ? "#ccc" : "#f54f33" }}
         >
-          SUBMIT
+          SEND
         </button>
       </StyledForm>
     </StyledContainer>
@@ -87,7 +87,7 @@ const StyledForm = styled.div`
     color: rgb(0, 0, 32);
     outline: none;
     font-family: "Inter", sans-serif;
-    border-radius: 3rem;
+    border-radius: 1rem;
   }
   input:focus,
   textarea:focus {

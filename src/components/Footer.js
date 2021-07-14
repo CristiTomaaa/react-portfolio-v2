@@ -3,35 +3,55 @@ import facebook from "../img/facebook-f-brands.svg";
 import linkedin from "../img/linkedin-in-brands.svg";
 import github from "../img/github-brands.svg";
 import stackoverflow from "../img/stack-overflow-brands.svg";
-import { motion } from "framer-motion";
+import banner from "../img/footerwave.svg";
 
 const Footer = () => {
   return (
-    <StyledFooter layout>
+    <StyledFooter>
       <div className="logo">
         <code>{`<CristiDev />`}</code>
       </div>
       <StyledSocials>
-        <p>Look mom, I am famous !</p>
+        <p>You can find me on :</p>
         <a href="https://www.facebook.com/cristi.toma/">
-          <img className="social-icon" src={facebook}></img>
+          <img className="social-icon" alt="facebook logo" src={facebook}></img>
         </a>
         <a href="https://www.linkedin.com/in/cristi-toma-b5791217a/">
-          <img className="social-icon" src={linkedin}></img>
+          <img className="social-icon" alt="linkedin logo" src={linkedin}></img>
         </a>
         <a href="https://github.com/CristiTomaaa">
-          <img className="social-icon" src={github}></img>
+          <img className="social-icon" alt="github logo" src={github}></img>
         </a>
         <a href="https://stackoverflow.com/users/14477897/cristit">
-          <img className="social-icon" src={stackoverflow}></img>
+          <img
+            className="social-icon"
+            alt="stack logo"
+            src={stackoverflow}
+          ></img>
         </a>
       </StyledSocials>
+      <Banner>
+        <img src={banner} alt="" />
+      </Banner>
     </StyledFooter>
   );
 };
 
+const Banner = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6rem;
+  z-index: 100;
+  @media (max-width: 1300px) {
+    bottom: 25.2rem;
+    position: absolute;
+  }
+`;
+
 const StyledFooter = styled.div`
   display: flex;
+  position: relative;
   justify-content: space-between;
   padding: 0rem 10rem;
   align-items: center;

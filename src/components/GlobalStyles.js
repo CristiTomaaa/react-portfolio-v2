@@ -30,6 +30,7 @@ button {
   transition: all 0.3s ease;
   border-radius: 4rem;
   font-family: 'Inter', sans-serif;
+  z-index: 100;
   &:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1); 

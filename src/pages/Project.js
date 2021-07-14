@@ -116,6 +116,9 @@ const ImageDisplay = styled.div`
     width: 100vh;
     object-fit: cover;
     margin-bottom: 5rem;
+    @media (max-width: 1300px) {
+      max-width: 100%;
+    }
   }
 `;
 

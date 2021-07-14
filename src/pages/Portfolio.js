@@ -1,4 +1,5 @@
 import addflight from "../img/addflight010.png";
+import bgcimg from "../img/portfoliobackground.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

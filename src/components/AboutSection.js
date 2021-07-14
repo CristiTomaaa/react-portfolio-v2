@@ -1,4 +1,6 @@
 import home1 from "../img/aboutimg.png";
+import banner from "../img/wave2.svg";
+import banner2 from "../img/wave1.svg";
 import styled from "styled-components";
 import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 import { motion } from "framer-motion";
@@ -36,12 +38,47 @@ const AboutSection = () => {
       <StyledImage>
         <img src={home1} alt=" big red circle" />
       </StyledImage>
+      <Banner>
+        <img src={banner} alt="" />
+      </Banner>
+      <Banner2>
+        <img src={banner2} alt="" />
+      </Banner2>
     </StyledAbout>
   );
 };
 
 const StyledHide = styled.div`
   overflow: hidden;
+`;
+
+const Banner = styled.div`
+  position: absolute;
+  top: 78vh;
+  left: 0;
+  right: 0;
+  img {
+    width: 100%;
+  }
+  width: 100%;
+  z-index: 5;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+`;
+const Banner2 = styled.div`
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  right: 0;
+  img {
+    width: 100%;
+  }
+  width: 100%;
+  z-index: 5;
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 export default AboutSection;

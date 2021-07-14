@@ -7,6 +7,7 @@ export const StyledAbout = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 0rem;
   color: black;
+  position: relative;
   @media (max-width: 1300px) {
     display: block;
     padding: 2rem 2rem;
@@ -15,10 +16,11 @@ export const StyledAbout = styled(motion.div)`
 `;
 
 export const StyledDescription = styled.div`
-  padding: 5rem 0rem 5rem 10rem;
+  padding: 3rem 0rem 5rem 10rem;
   flex: 1;
   /* padding-right: 5rem; */
   h2 {
+    font-size: 2.9rem;
     font-weight: lighter;
   }
   p {

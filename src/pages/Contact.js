@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { pageAnimations, titleAnimation } from "../animations";
 import styled from "styled-components";
 import ContactSection from "../components/ContactSection";
-import facebook from "../img/facebook-f-brands.svg";
-import linkedin from "../img/linkedin-in-brands.svg";
-import github from "../img/github-brands.svg";
-import stackoverflow from "../img/stack-overflow-brands.svg";
+// import facebook from "../img/facebook-f-brands.svg";
+// import linkedin from "../img/linkedin-in-brands.svg";
+// import github from "../img/github-brands.svg";
+// import stackoverflow from "../img/stack-overflow-brands.svg";
 
 const Contact = () => {
   return (
@@ -15,6 +15,9 @@ const Contact = () => {
       animate="show"
       exit="exit"
     >
+      <StyledForm>
+        <ContactSection />
+      </StyledForm>
       <StyledTitle>
         <StyledHide>
           <motion.h2 variants={titleAnimation}>
@@ -22,26 +25,35 @@ const Contact = () => {
           </motion.h2>
           <p>Cristi Toma</p>
           <p>hello@cristidev.co.uk</p>
-          <p>+44 7397.561.016</p>
+          <p>(+44) 07397 561 016</p>
         </StyledHide>
-        <StyledSocials>
+        {/* <StyledSocials>
           <a href="https://www.facebook.com/cristi.toma/">
-            <img className="social-icon" src={facebook}></img>
+            <img
+              className="social-icon"
+              alt="facebook logo"
+              src={facebook}
+            ></img>
           </a>
           <a href="https://www.linkedin.com/in/cristi-toma-b5791217a/">
-            <img className="social-icon" src={linkedin}></img>
+            <img
+              className="social-icon"
+              alt="linkedin logo"
+              src={linkedin}
+            ></img>
           </a>
           <a href="https://github.com/CristiTomaaa">
-            <img className="social-icon" src={github}></img>
+            <img className="social-icon" alt="github logo" src={github}></img>
           </a>
           <a href="https://stackoverflow.com/users/14477897/cristit">
-            <img className="social-icon" src={stackoverflow}></img>
+            <img
+              className="social-icon"
+              alt="stack logo"
+              src={stackoverflow}
+            ></img>
           </a>
-        </StyledSocials>
+        </StyledSocials> */}
       </StyledTitle>
-      <StyledForm>
-        <ContactSection />
-      </StyledForm>
     </StyledContact>
   );
 };
@@ -83,48 +95,52 @@ const StyledHide = styled.div`
   h2 {
     font-size: 3rem;
     margin-bottom: 4rem;
-    /* font-weight: bold; */
   }
 `;
 
-const StyledSocials = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  margin: 5rem;
-  img {
-    box-shadow: 0px 0px 5px #dadada;
-  }
-  .social-icon {
-    margin: 2rem;
-    filter: invert(54%) sepia(76%) saturate(6225%) hue-rotate(345deg)
-      brightness(108%) contrast(92%);
-    width: 50px;
-    height: 50px;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .social-icon:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.3);
-  }
-  @media (max-width: 1300px) {
-    display: block;
-    margin-bottom: 3rem;
-    .social-icon {
-      margin: 0rem 1rem;
-    }
-  }
-`;
+// const StyledSocials = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   color: white;
+//   margin: 5rem;
+//   img {
+//     box-shadow: 0px 0px 5px #dadada;
+//   }
+//   .social-icon {
+//     margin: 2rem;
+//     filter: invert(54%) sepia(76%) saturate(6225%) hue-rotate(345deg)
+//       brightness(108%) contrast(92%);
+//     width: 50px;
+//     height: 50px;
+//     -webkit-transform: translateZ(0);
+//     transform: translateZ(0);
+//     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-transition-duration: 0.3s;
+//     transition-duration: 0.3s;
+//     -webkit-transition-property: transform;
+//     transition-property: transform;
+//   }
+//   .social-icon:hover {
+//     -webkit-transform: scale(1.1);
+//     transform: scale(1.3);
+//   }
+//   @media (max-width: 1300px) {
+//     /* display: block; */
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     margin-bottom: 3rem;
+//     .social-icon {
+//       margin: 1rem 1rem;
+//       width: 40px;
+//       height: 40px;
+//     }
+//   }
+// `;
 
 export default Contact;

@@ -4,10 +4,8 @@ import webdevelopment from "../img/data.svg";
 import ecommerce from "../img/online-shopping.svg";
 import cms from "../img/cms.svg";
 
-import { StyledAbout, StyledDescription, StyledImage } from "../styles";
+import { StyledAbout, StyledDescription } from "../styles";
 import styled from "styled-components";
-import { fade, scrollReveal } from "../animations";
-
 const ServicesSection = () => {
   return (
     <StyledServices>
