@@ -115,7 +115,7 @@ const StyledCard = styled.div`
     flex-direction: column;
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .icon {
     display: flex;

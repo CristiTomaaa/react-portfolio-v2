@@ -15,7 +15,7 @@ export const StyledAbout = styled(motion.div)`
 `;
 
 export const StyledDescription = styled.div`
-  padding: 5rem 10rem;
+  padding: 5rem 0rem 5rem 10rem;
   flex: 1;
   /* padding-right: 5rem; */
   h2 {

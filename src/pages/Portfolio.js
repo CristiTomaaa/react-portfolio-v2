@@ -25,11 +25,9 @@ const Portfolio = () => {
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/portfolio/addflight">
           <StyledHide>
-            <motion.img
-              variants={photoAnimation}
-              src={addflight}
-              alt="project image"
-            />
+            <div className="img-zoom">
+              <img src={addflight} alt="project image" />
+            </div>
           </StyledHide>
         </Link>
       </StyledProject>
@@ -38,11 +36,9 @@ const Portfolio = () => {
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/portfolio/addflight">
           <StyledHide>
-            <motion.img
-              variants={photoAnimation}
-              src={addflight}
-              alt="project image"
-            />
+            <div className="img-zoom">
+              <img src={addflight} alt="project image" />
+            </div>
           </StyledHide>
         </Link>
       </StyledProject>
@@ -95,6 +91,26 @@ const StyledProject = styled.div`
 const StyledHide = styled.div`
   overflow: hidden;
   width: 100%;
+  img {
+    margin: 2.5rem auto;
+  }
+  .img-zoom {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+  }
+  .img-zoom img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+  }
+  .img-zoom:hover img {
+    transform: scale(1.03);
+  }
 `;
 
 export default Portfolio;

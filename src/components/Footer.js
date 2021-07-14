@@ -36,7 +36,7 @@ const StyledFooter = styled.div`
   padding: 0rem 10rem;
   align-items: center;
   background-color: #f54f33;
-  box-shadow: 0 -10px 6px -6px #c2c2c2;
+  /* box-shadow: 0 -10px 16px -5px #bbbbbb; */
   @media (max-width: 1300px) {
     display: flex;
     flex-direction: column;
