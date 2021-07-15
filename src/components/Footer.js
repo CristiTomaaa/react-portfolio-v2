@@ -13,16 +13,22 @@ const Footer = () => {
       </div>
       <StyledSocials>
         <p>You can find me on :</p>
-        <a href="https://www.facebook.com/cristi.toma/">
+        <a href="https://www.facebook.com/cristi.toma/" target="_blank">
           <img className="social-icon" alt="facebook logo" src={facebook}></img>
         </a>
-        <a href="https://www.linkedin.com/in/cristi-toma-b5791217a/">
+        <a
+          href="https://www.linkedin.com/in/cristi-toma-b5791217a/"
+          target="_blank"
+        >
           <img className="social-icon" alt="linkedin logo" src={linkedin}></img>
         </a>
-        <a href="https://github.com/CristiTomaaa">
+        <a href="https://github.com/CristiTomaaa" target="_blank">
           <img className="social-icon" alt="github logo" src={github}></img>
         </a>
-        <a href="https://stackoverflow.com/users/14477897/cristit">
+        <a
+          href="https://stackoverflow.com/users/14477897/cristit"
+          target="_blank"
+        >
           <img
             className="social-icon"
             alt="stack logo"

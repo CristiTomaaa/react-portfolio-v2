@@ -77,7 +77,7 @@ const StyledForm = styled.div`
   input,
   textarea {
     padding: 20px;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px #dadada;
     margin-bottom: 20px;
     border: 1px solid lightgray;
@@ -87,7 +87,6 @@ const StyledForm = styled.div`
     color: rgb(0, 0, 32);
     outline: none;
     font-family: "Inter", sans-serif;
-    border-radius: 1rem;
   }
   input:focus,
   textarea:focus {
