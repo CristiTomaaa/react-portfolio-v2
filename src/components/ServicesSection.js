@@ -90,6 +90,10 @@ const StyledServicesImage = styled.div`
     height: 30rem;
     object-fit: contain;
     display: flex;
+    @media (max-width: 1300px) {
+      width: 75%;
+      margin: 0 auto;
+    }
   }
 `;
 

@@ -73,11 +73,11 @@ const StyledContact = styled(motion.div)`
 
 const StyledTitle = styled.div`
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   text-align: center;
   display: flex;
-  margin: 4rem;
+  margin: 7rem 3rem;
   color: black;
   flex: 1;
 `;

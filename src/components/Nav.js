@@ -14,7 +14,7 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">HOME</Link>
+          <Link to="/">ABOUT ME</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
@@ -101,7 +101,6 @@ const StyledNav = styled.nav`
       margin: 2rem;
     }
     ul {
-      padding: 2rem;
       justify-content: space-around;
       width: 100%;
     }

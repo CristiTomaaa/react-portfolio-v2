@@ -6,6 +6,7 @@ import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 import { motion } from "framer-motion";
 import { titleAnimation, fade } from "../animations";
 import ParticleBackground from "./ParticleBackground";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -33,7 +34,9 @@ const AboutSection = () => {
           web !<br /> I am a <span>Front-End Web Developer</span> passionate
           about creating interactive applications and experiences.
         </motion.p>
-        <motion.button variants={fade}>Contact</motion.button>
+        <Link to="/contact">
+          <motion.button variants={fade}>Contact</motion.button>
+        </Link>
       </StyledDescription>
       <StyledImage>
         <img src={home1} alt=" big red circle" />

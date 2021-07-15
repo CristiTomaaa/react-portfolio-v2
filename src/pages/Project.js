@@ -40,6 +40,11 @@ const Project = () => {
                 key={award.title}
               />
             ))}
+            <StyledButton>
+              <a href={project.link} target="_blank">
+                VIEW ONLINE
+              </a>
+            </StyledButton>
           </StyledDescription>
           <ImageDisplay>
             <img src={project.secondaryImg} alt="full project image" />
@@ -49,6 +54,31 @@ const Project = () => {
     </>
   );
 };
+
+const StyledButton = styled.div`
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  background-color: #f54f33;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 4rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: #f54f33;
+    color: white;
+  }
+  @media (max-width: 1300px) {
+    margin: 0rem 1rem 4rem 1rem;
+  }
+`;
 
 const StyledProject = styled(motion.div)`
   color: black;
@@ -68,10 +98,10 @@ const StyledHeadline = styled.div`
     width: 100%;
     height: 100%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(0px 15px 25px #858585);
+    filter: drop-shadow(0px 15px 15px #e7e7e7);
   }
   @media (max-width: 1300px) {
-    min-height: 60vh;
+    min-height: 30vh;
   }
 `;
 
@@ -98,7 +128,7 @@ const StyledContent = styled.div`
   .line {
     width: 100%;
     height: 0.3rem;
-    border-radius: 50rem;
+    border-radius: 50%;
     background: #f54f33;
     margin: 1rem 0rem;
   }

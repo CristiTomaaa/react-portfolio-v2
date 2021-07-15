@@ -25,6 +25,9 @@ export const StyledDescription = styled.div`
   }
   p {
     line-height: 2.5rem;
+    @media (max-width: 1300px) {
+      min-width: 25rem;
+    }
   }
   @media (max-width: 1300px) {
     padding: 0rem;
@@ -43,5 +46,9 @@ export const StyledImage = styled.div`
     height: 30rem;
     object-fit: contain;
     display: flex;
+    @media (max-width: 1300px) {
+      width: 75%;
+      margin: 0 auto;
+    }
   }
 `;

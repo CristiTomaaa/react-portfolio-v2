@@ -113,6 +113,7 @@ const StyledForm = styled.div`
     transition: all 0.3s ease;
     border-radius: 4rem;
     font-family: "Inter", sans-serif;
+    z-index: 1;
     &:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
@@ -127,7 +128,8 @@ const StyledForm = styled.div`
 
 const StyledContainer = styled.div`
   display: flex;
-  margin: 5rem auto;
+  margin: 3rem auto;
+  position: relative;
 `;
 
 export default ContactSection;

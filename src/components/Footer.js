@@ -44,8 +44,7 @@ const Banner = styled.div`
   bottom: 6rem;
   z-index: 100;
   @media (max-width: 1300px) {
-    bottom: 25.2rem;
-    position: absolute;
+    display: none;
   }
 `;
 
@@ -61,6 +60,8 @@ const StyledFooter = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
+    padding: 0rem 3rem;
   }
   ul {
     display: flex;

@@ -9,6 +9,7 @@ export const projectState = () => {
       mainImg: addflight,
       secondaryImg: addflightfull,
       url: "/portfolio/addflight",
+      link: "http://addflight.com",
       awards: [
         {
           title: "Technology Stack",

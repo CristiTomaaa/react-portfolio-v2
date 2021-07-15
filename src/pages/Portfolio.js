@@ -76,15 +76,19 @@ const StyledProject = styled.div`
     width: 100%;
     height: 100%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(0px 15px 25px #858585);
+    filter: drop-shadow(0px 15px 15px #e0e0e0);
     /* object-fit: fill; */
     /* overflow: show; */
   }
   @media (max-width: 1300px) {
+    padding-bottom: 3rem;
     img {
       max-width: 100%;
       height: auto;
-      filter: drop-shadow(0px 0px 0px #ffffff);
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(0px 15px 15px #e7e7e7);
+      @media (max-width: 1300px) {
+      }
     }
   }
 `;
