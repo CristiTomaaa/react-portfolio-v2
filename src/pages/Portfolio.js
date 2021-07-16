@@ -1,14 +1,8 @@
 import addflight from "../img/addflight010.png";
-import bgcimg from "../img/portfoliobackground.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {
-  pageAnimations,
-  fade,
-  photoAnimation,
-  lineAnimation,
-} from "../animations";
+import { pageAnimations, fade, lineAnimation } from "../animations";
 // import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
@@ -28,7 +22,7 @@ const Portfolio = () => {
         <Link to="/portfolio/addflight">
           <StyledHide>
             <div className="img-zoom">
-              <img src={addflight} alt="project image" />
+              <img src={addflight} alt="project" />
             </div>
           </StyledHide>
         </Link>
@@ -39,7 +33,7 @@ const Portfolio = () => {
         <Link to="/portfolio/addflight">
           <StyledHide>
             <div className="img-zoom">
-              <img src={addflight} alt="project image" />
+              <img src={addflight} alt="project" />
             </div>
           </StyledHide>
         </Link>

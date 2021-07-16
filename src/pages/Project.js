@@ -31,7 +31,7 @@ const Project = () => {
         >
           <StyledHeadline>
             <h2>{project.title}</h2>
-            <img src={project.mainImg} alt="project image" />
+            <img src={project.mainImg} alt="project" />
           </StyledHeadline>
           <StyledDescription>
             {project.awards.map((award) => (
@@ -42,13 +42,13 @@ const Project = () => {
               />
             ))}
             <StyledButton>
-              <a href={project.link} target="_blank">
+              <a href={project.link} target="_blank" rel="noreferrer">
                 VIEW ONLINE
               </a>
             </StyledButton>
           </StyledDescription>
           <ImageDisplay>
-            <img src={project.secondaryImg} alt="full project image" />
+            <img src={project.secondaryImg} alt="full project" />
           </ImageDisplay>
           <ScrollTop />
         </StyledProject>
