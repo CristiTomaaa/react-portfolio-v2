@@ -6,6 +6,7 @@ import ContactSection from "../components/ContactSection";
 // import linkedin from "../img/linkedin-in-brands.svg";
 // import github from "../img/github-brands.svg";
 // import stackoverflow from "../img/stack-overflow-brands.svg";
+import ScrollTop from "../components/ScrollTop";
 
 const Contact = () => {
   return (
@@ -54,6 +55,7 @@ const Contact = () => {
           </a>
         </StyledSocials> */}
       </StyledTitle>
+      <ScrollTop />
     </StyledContact>
   );
 };
@@ -67,7 +69,7 @@ const StyledContact = styled(motion.div)`
   min-height: 90vh;
   flex-wrap: wrap;
   @media (max-width: 1300px) {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 `;
 

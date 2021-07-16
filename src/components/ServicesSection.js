@@ -51,7 +51,7 @@ const ServicesSection = () => {
               <h3>CMS</h3>
             </div>
             <p>
-              We can provide you with a Content Management System (CMS) so that
+              I can provide you with a Content Management System (CMS) so that
               once the development process is finished you can add or make small
               adjustments via a user friendly control panel.
             </p>
@@ -115,6 +115,9 @@ const StyledCard = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    p {
+      width: 100%;
+    }
   }
   p {
     font-size: 1.2rem;

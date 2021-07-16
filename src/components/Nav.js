@@ -14,7 +14,7 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">ABOUT ME</Link>
+          <Link to="/">SERVICES</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
@@ -77,8 +77,9 @@ const StyledNav = styled.nav`
   a {
     text-decoration: none;
     color: black;
+
     /* color: #f54f33; */
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   ul {
     display: flex;
@@ -98,11 +99,13 @@ const StyledNav = styled.nav`
     padding: 2rem 1rem;
     #logo {
       display: inline-block;
-      margin: 2rem;
+      margin: 0rem 0rem 3rem 0rem;
     }
     ul {
       justify-content: space-around;
       width: 100%;
+    }
+    a {
     }
     li {
       padding: 0;

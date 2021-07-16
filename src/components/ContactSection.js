@@ -70,7 +70,7 @@ const ContactSection = () => {
   );
 };
 
-const StyledForm = styled.div`
+const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   width: 50vh;

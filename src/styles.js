@@ -26,7 +26,8 @@ export const StyledDescription = styled.div`
   p {
     line-height: 2.5rem;
     @media (max-width: 1300px) {
-      min-width: 25rem;
+      /* min-width: 25rem; */
+      width: 100%;
     }
   }
   @media (max-width: 1300px) {

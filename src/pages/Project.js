@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import { projectState } from "../projectState";
 import { motion } from "framer-motion";
 import { pageAnimations } from "../animations";
+import ScrollTop from "../components/ScrollTop";
 
 const Project = () => {
   const history = useHistory();
@@ -49,6 +50,7 @@ const Project = () => {
           <ImageDisplay>
             <img src={project.secondaryImg} alt="full project image" />
           </ImageDisplay>
+          <ScrollTop />
         </StyledProject>
       )}
     </>
@@ -76,7 +78,7 @@ const StyledButton = styled.div`
     color: white;
   }
   @media (max-width: 1300px) {
-    margin: 0rem 1rem 4rem 1rem;
+    margin: 0rem 5rem 4rem 5rem;
   }
 `;
 
@@ -113,7 +115,7 @@ const StyledDescription = styled.div`
   justify-content: space-around;
   @media (max-width: 1300px) {
     display: block;
-    margin: 2rem 2rem;
+    margin: 2rem 0rem;
   }
   h3 {
     color: black;

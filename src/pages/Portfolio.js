@@ -9,11 +9,12 @@ import {
   photoAnimation,
   lineAnimation,
 } from "../animations";
-import { useScroll } from "../components/useScroll";
+// import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 const Portfolio = () => {
-  const [element, controls] = useScroll();
-  const [element1, controls1] = useScroll();
+  // const [element, controls] = useScroll();
+  // const [element1, controls1] = useScroll();
   return (
     <StyledWork
       variants={pageAnimations}
@@ -43,6 +44,7 @@ const Portfolio = () => {
           </StyledHide>
         </Link>
       </StyledProject>
+      <ScrollTop />
     </StyledWork>
   );
 };
@@ -79,6 +81,11 @@ const StyledProject = styled.div`
     filter: drop-shadow(0px 15px 15px #e0e0e0);
     /* object-fit: fill; */
     /* overflow: show; */
+  }
+  h2 {
+    @media (max-width: 1300px) {
+      font-size: 200%;
+    }
   }
   @media (max-width: 1300px) {
     padding-bottom: 3rem;
